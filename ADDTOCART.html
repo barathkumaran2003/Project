@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.cart-container {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.room-selection,
+.dates {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.summary {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+
+.summary p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+</style>
+<script>
+    // Get references to elements
+const roomTypeSelect = document.getElementById('room-type');
+const checkinDateInput = document.getElementById('checkin-date');
+const checkoutDateInput = document.getElementById('checkout-date');
+const summaryRoom = document.getElementById('summary-room');
+const summaryNights = document.getElementById('summary-nights');
+const summaryPrice = document.getElementById('summary-price');
+const totalPriceElement = document.getElementById('total-price');
+const addToCartBtn = document.getElementById('add-to-cart-btn');
+
+// Calculate the number of nights between check-in and check-out
+function calculateNights() {
+  const checkinDate = new Date(checkinDateInput.value);
+  const checkoutDate = new Date(checkoutDateInput.value);
+  const timeDiff = checkoutDate.getTime() - checkinDate.getTime();
+  const daysDiff = timeDiff / (1000 * 3600 * 24);
+  return Math.max(0, daysDiff);
+}
+
+// Update the booking summary
+function updateSummary() {
+  const selectedRoom = roomTypeSelect.options[roomTypeSelect.selectedIndex];
+  const roomPrice = parseInt(selectedRoom.getAttribute('data-price'));
+  const numberOfNights = calculateNights();
+  
+  summaryRoom.textContent = selectedRoom.value;
+  summaryPrice.textContent = roomPrice;
+  summaryNights.textContent = numberOfNights;
+
+  const totalPrice = numberOfNights * roomPrice;
+  totalPriceElement.textContent = totalPrice;
+}
+
+// Event listeners to update the summary when the user selects or changes input
+roomTypeSelect.addEventListener('change', updateSummary);
+checkinDateInput.addEventListener('change', updateSummary);
+checkoutDateInput.addEventListener('change', updateSummary);
+
+// Add to Cart button functionality
+addToCartBtn.addEventListener('click', () => {
+  const total = totalPriceElement.textContent;
+  alert(`Room added to cart. Total: $${total}`);
+});
+
+</script>
+<body>
+  <div class="cart-container">
+    <h2>Your Booking Cart</h2>
+    
+    <div class="room-selection">
+      <label for="room-type">Room Type:</label>
+      <select id="room-type">
+        <option value="Deluxe Suite" data-price="200">Deluxe Suite - $200/night</option>
+        <option value="Standard Room" data-price="100">Standard Room - $100/night</option>
+        <option value="Family Suite" data-price="300">Family Suite - $300/night</option>
+      </select>
+    </div>
+
+    <div class="dates">
+      <label for="checkin-date">Check-in Date:</label>
+      <input type="date" id="checkin-date">
+      
+      <label for="checkout-date">Check-out Date:</label>
+      <input type="date" id="checkout-date">
+    </div>
+
+    <div class="summary">
+      <h3>Booking Summary</h3>
+      <p>Room Type: <span id="summary-room">Deluxe Suite</span></p>
+      <p>Number of Nights: <span id="summary-nights">0</span></p>
+      <p>Price per Night: $<span id="summary-price">200</span></p>
+      <p>Total Price: $<span id="total-price">0</span></p>
+    </div>
+
+    <button id="add-to-cart-btn">Add to Cart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
