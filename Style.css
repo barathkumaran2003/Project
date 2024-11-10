@@ -1,0 +1,985 @@
+
+    .bg{
+        background-image: url("Hotel Project/images/dishesbg.png");
+        
+    }
+    #biriyani
+    {
+        margin-top: 2%;
+        float: right;
+        display: flex;
+        
+    }
+    #heading
+    {
+        background-color: brown; 
+       height: 100px;
+        margin-bottom: 0%;
+    }
+    .new {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent; /* Initial background color */
+    transition: background-color 0.9s, color 0.9s; /* Smooth transition */
+}
+
+
+.new.scrolled {
+    border-radius: 50px;
+    background-color: #ffffff; /* New background color when scrolled */
+    color: #000000; /* New text color when scrolled */
+}
+
+/* Change link colors if needed */
+.new.scrolled a {
+    color: #000000; /* Text color for links when scrolled */
+}
+.new.scrolled img{
+    border-radius: 50px 0 0 50px;
+}
+
+    li{
+        list-style-type: none;
+        padding-top: 20px;
+         padding-left: 20px;
+         padding-right: 20px;
+         
+
+    }
+    a{
+        text-decoration: none;
+        color: aliceblue;
+        text-decoration-thickness: 50PX;
+        text-align: center;
+    }
+    ul{
+        display:flex;
+        overflow: auto;
+        text-align: center;
+    }
+    @font-face {
+   font-family: myFirstFont;
+   src: url("Hotel Project/font/slick.woff");
+}
+
+* {
+   font-family: myFirstFont;
+}
+
+    #midle
+    {
+        display: flex;
+        font-family:  f;
+        display: inline-flex;
+    }
+    @font-face {
+        font-family: f;
+        src: url("Hotel Project/font/slick.woff");
+    }
+    #float
+    {
+        position: relative;
+        display: flex;
+        animation-name: first;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transition-property: width;
+        transition: 2s;
+    }
+    #float:hover{
+        animation-play-state: paused;
+        width: 200px;
+        height: 200px;   
+    }
+    #float:hover .float1{
+        overflow: visible;
+    }
+
+    @keyframes first        
+    {
+    0%   {transform:  translateX(0);}
+    100% {transform: translateX(calc(-100px * 10));}
+    }
+    #name{
+        display: flex;
+    }
+     #bg_2{
+        background-image: url("Hotel Project/images/dishesbg.png");
+        background-position-y: bottom;
+     }
+     #dis.div.img:hover{
+        display: block;
+
+     }
+     #im1{
+
+     }
+     #im1:hover{
+        width: 50px;
+
+     }
+     #bg3{
+        background-image: url("Hotel Project/images/—Pngtree—restaurant food menu background_1046420.jpg");
+        background-size:auto;
+        background-repeat: no-repeat;
+        
+     }
+     #bg6
+     {
+        background-image: url("Hotel Project/images/pixelcut-export (5).png"),url("Hotel Project/images/background (5) (1) (2).png");
+     }
+     /* .one:hover{
+        background-color:aqua ;
+        
+     } */
+     /* .oneof{
+        width: 200px;
+        height: 50px;
+        float: top;
+        background: red;
+        transition: 2s;
+        transform-origin: bottom;
+        transform: rotate(-20deg);
+        overflow: hidden;
+       
+        
+     }
+     .oneof:hover
+     {
+        transform: scaleY(1.5);
+       
+    } */
+    .two{
+        width: 300px; 
+        height: 200px;
+        transition: 0.5s;
+    }
+    .two:hover{
+        /* width: 300px;
+        height: 300px; */
+        transform: translateY(-20px);
+
+    }
+    .two:hover .meals1{
+        opacity: 1;
+    }
+    .two1{
+        width: 200px; 
+        height: 200px;
+        transition: 0.5s;
+    }
+    .two1:hover{
+        /* width: 300px;
+        height: 300px; */
+        transform: translateY(-20px);
+
+    }
+    .one{
+        z-index: -1;
+        
+    }
+    .twoof{
+        z-index: 1;
+    }
+    .order3:hover{
+        background-color: azure;
+        text-decoration: underline;
+        transition-duration: 0.5s;
+    }
+    .order3{
+        background-color: chocolate;
+        color: black;
+    }
+    .order2:hover{
+        background-color: chocolate;
+        text-decoration: underline;
+        transition-duration: 0.5s;
+    }
+    .order2{
+        color: rgb(255, 255, 255);
+    }
+    .order1:hover{
+        background-color: black;
+        color: aliceblue;
+        text-decoration: underline;
+        transition-duration: 0.5s;
+    }
+    .order1{
+        background-color: chocolate;
+        color: black;
+        opacity: 1;
+    }
+    /* .order2:hover{
+        background-color: aliceblue;
+        text-decoration: underline;
+        transition-duration: 0.5s;
+    }
+    .order2{
+        background-color: chocolate;
+        color: black;
+        opacity: 1;
+    } */
+    .order4:hover{
+        background-color: chocolate;
+        color: black;
+        padding: 13px 30px;
+        text-decoration: underline;
+        transition-duration: 0.5s;
+    }
+    .meals{
+        position: relative;
+        opacity: 1;
+        background-color: aliceblue;
+        transition: 0.5s;
+    
+    }
+    .meals:hover{
+        border: 1px solid silver;
+        transform: scale(1.1);
+        filter: contrast(100%);
+       
+    }
+    .meals:hover .meals1{
+        opacity: 1;
+        
+        
+
+    }
+    .meals1{
+        position: absolute;
+        margin-top: 70px; /* Adjusts the vertical positioning of the button */
+        left: 60px;
+        margin-right: 100px;
+        padding: 10px 20px;
+        background-color: chocolate; /* Button background color */
+        color: rgb(0, 0, 0); /* Button text color */
+        border: none;
+        cursor: pointer;
+        font-size: 16px; 
+        opacity: 0;
+        transition: 1s;
+        font-weight: bolder;
+        
+    }
+    .meals1:hover{
+        background-color: azure;
+        text-decoration: underline;
+    }
+    .hovered{
+        position: relative;
+        width: 308px;
+        height: 500px;
+        overflow: hidden;
+    }
+    .hovered1{
+        background-color: chocolate;
+        width: 320px;
+        height: 100px;
+        margin-top: 50px;
+        position: absolute;
+        margin-right: 20px;
+        float: left;
+        bottom: 0px;
+        transition: 0.5s;
+        transform-origin: bottom;
+        transform: rotate(-20deg);
+    }
+    .hovered:hover .hovered1{
+        transform: scaleY(10);
+    }
+    .hovered3{
+        transition: 0.5s;
+    }
+    .hovered:hover .hovered3{
+        color: aliceblue;
+    }
+    .hovered2{
+        position: absolute;
+        padding: 1;
+    }
+    .hover1{
+        position: relative;
+    }
+    .hover2{
+        position: absolute;
+        background-color: chocolate;
+        width: 100px;
+        height: 50px;
+    }
+    g{
+        transition: 0.5s;
+    }
+    .hovered:hover g{
+        fill: aliceblue;
+    }
+    #cycle{
+        display: flex;
+        animation-name: delevery;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transition-property: width;
+    }
+    @keyframes delevery 
+    {
+        0%   {transform:  translateX(0);}
+        100% {transform: translateX(2);}    
+    }
+    .star-icon {
+    color: gold; /* Set the color of the star */
+    font-size: 24px; /* Adjust the size */
+}
+.banner{
+    width: 660px; 
+    height: 520px;
+    overflow: hidden;
+}
+.banner1{
+    width: 660px;
+    height: 520px;
+    transition: 0.5s;
+}
+.banner1:hover{
+    transform: scale(1.1);
+}
+.banner2{
+    width: 330px; 
+    height: 250px;
+    transition: 0.5s;
+}
+.banner2:hover{
+    transform: scale(1.1);
+}
+
+.banner3{
+    width: 330px; 
+    height: 250px;
+    transition: 0.5s;
+}
+.banner3:hover{
+    transform: scale(1.1);
+}
+
+.banner4{
+    width: 680px; 
+    height: 250px;
+    transition: 0.5s;
+
+}
+.banner4:hover{
+    transform: scale(1.1);
+}
+.find{
+    width: 480px;
+    height: 500px;
+    transform: rotate(-10deg);
+    float: left;
+    margin-right: 100px;
+    margin-top: 400px;
+    transform-origin: bottom;
+    transition: 0.5s;
+}
+.hovered:hover .find{
+    transform: scaleY(1.8);
+}
+
+.offer{
+        padding: 10px 30px;
+        background-color: rgb(254, 124, 32); /* Button background color */
+        color: rgb(255, 255, 255); /* Button text color */
+        border: none;
+        cursor: pointer;
+        font-size: 16px; 
+        margin-top: 160px;
+        margin-left: 20px;
+        transition-duration: 1s;
+}
+.offer:hover{
+    background-color: black;
+}
+.calendar-icon {
+    font-size: 20px; /* Size of the icon */
+    color: gold;
+    margin-left: 20px;
+    margin-top: 5px
+}
+.person-icon {
+    font-size: 24px; /* Size of the icon */
+    color: #333; /* Color of the icon */
+}
+.fold{
+        padding: 10px 30px;
+        background-color: rgb(254, 124, 32); /* Button background color */
+        color: rgb(255, 255, 255); /* Button text color */
+        border: none;
+        cursor: pointer;
+        font-size: 16px; 
+        margin-left: 280px;
+        margin-top: 20px;
+        transition: 0.5s;
+}
+.fold:hover{
+    background-color: black;
+}
+.fold1{
+    width: 400px; 
+    height: 250px;
+    transition: 0.5s;
+}
+.fold1:hover{
+    transform: scale(1.1);
+}
+.fold2{
+    transition: 0.5s;
+    transform-origin: left;
+    font-weight: bolder;
+}
+.fold2:hover{
+    color: chocolate;
+    transform: scale(1.1);
+}
+.arrow-icon{
+   
+}
+.arrow-icon:hover{
+    transform: scale(1.1);
+}
+.to{
+    background-color: white;
+    position: relative;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    
+}
+.there{
+    background-image: url("Hotel Project/images/footer-illustration.png");
+    height: 500px;
+}
+.signup{ 
+    background-color: chocolate;
+}
+/* CSS */
+.social-icons a {
+    font-size: 20px; /* Icon size */
+    color: #ffffff; /* Icon color */
+    padding: 10px;
+    border-radius: 50%; /* Circle shape */
+    margin: 0 ;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.social-icons .fa-facebook {
+    background-color: #3b5998; /* Facebook blue */
+}
+
+.social-icons .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-icons .fa-twitter {
+    background-color: #1da1f2; /* Twitter blue */
+}
+
+.social-icons .fa-youtube {
+    background-color: #ff0000; /* YouTube red */
+}
+
+/* Hover effect */
+.social-icons a:hover {
+    color: #ffffff;
+    opacity: 0.8; /* Slight transparency */
+}
+.meals12 {
+    position: absolute; /* Adjusts the vertical positioning of the button */
+    left: 60px;
+    padding: 10px 20px;
+    background-color: chocolate; /* Button background color */
+    color: rgb(0, 0, 0); /* Button text color */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0;
+    transition: 1s;
+    font-weight: bolder;
+    z-index: 2; /* Ensure button appears on top */
+}
+
+.meals12:hover {
+    background-color: azure;
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.two2:hover .meals12 {
+    opacity: 1;
+}
+.two {
+    z-index: 1; /* Ensure image appears behind button */
+}
+.cart-remove {
+    font-size: 20px;
+    color: #000000; /* Red color for the trash icon */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-remove:hover {
+    color: #b30000; /* Darker red on hover */
+}
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    z-index: 100;
+} 
+
+.cart-active{
+    right: 0;
+    transition: 0.5s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(40, 37, 37, 0.1);
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom:1px solid rgba(0,0,0,0.1) ;
+    padding-bottom: 10px;
+}
+.cart-img{
+    object-fit: cover;
+    border: 2px solid rgba(0,0,0,0.1);
+    padding: 5px;
+}
+.detail-box{
+display: grid;
+row-gap: 0.5rem;
+}
+.price-box{
+     display: flex;
+     justify-content: space-between;
+}
+.cart-food-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 2px solid rgba(0,0,0,0.1);
+    outline: none;
+    width: 2.4rem;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+#cart-close{
+    position:absolute;
+    top: 0.2rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#cart-icon{
+    margin-top: 33px; 
+    color: chocolate; 
+    font-size: xx-large; 
+    position: absolute; 
+    cursor: pointer;
+}
+.container {
+    max-width: 1200px;
+    padding-left: 64px;
+    padding-right: 64px;
+    width: 100%;
+    height: 720px;  /* Remove this line if you want the height to adjust automatically */
+    overflow-y: scroll; /* Or leave as 'scroll' if you want a permanent scrollbar */
+}
+
+.shop-content {
+    display: grid;
+    margin-top: 50px; /* Adjust this as needed */
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 50px;
+    height: 200px;
+    width: 10px;
+}
+.box{
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    border-radius: 3px;
+    top: 0;
+    z-index: 1;
+}
+
+.pic{
+    overflow: hidden; 
+}
+
+.pic:hover img{
+    transform: scale(1.5);
+}
+.pic:hover .meals1{
+    opacity: 1;
+}
+.food-img{
+    transition: 0.5s;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+}
+.food-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff6348;
+}
+.food-price{
+    font-weight: 500;
+}
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #2ed573;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.add-cart:hover{
+    background-color: rgb(254, 124, 32);
+}
+
+.add-car{
+    position: absolute;
+    background-color: #2ed573;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 3.1rem;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 75px;
+    margin-left: 80px;
+    z-index: 1;
+    opacity: 0;
+}
+.add-car:hover{
+    background-color: rgb(254, 124, 32);
+}
+.box:hover .add-car{
+    opacity: 1;
+}
+.zoom-in{
+    height: 200px;
+     margin-left: 200px ; 
+     margin-top: 130px; 
+     position: absolute;
+     animation: zoom 1s infinite ease-in-out;
+    }
+    
+    @keyframes zoom {
+      0% {
+        transform: scale(1); /* Initial size */
+      }
+      50% {
+        transform: scale(1.1); /* Zoom in */
+      }
+      100% {
+        transform: scale(1); /* Zoom out */
+      }
+    }
+    .control{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn-group .btn{
+        border-radius: 3px;
+    }
+    .btn-group button{
+       width: 200px;
+       height: 50px;
+       margin-left: 180px;
+       margin-right: 10px;
+        border: none;
+        background-color: #00b894;
+        color: white;
+        border: 2px solid #00b894;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 3px;
+    }
+
+    .btn-group button:hover,
+    .btn-group .btn-click{
+        background:transparent;
+        border: 2px solid #00b894 ;
+        color: white;
+
+    }
+    .in-animation4 {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.in-animation4.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.in-animation5 {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.in-animation5.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.in-animation6 {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.in-animation6.visible {
+  opacity: 1;
+  transform: translateX(0);
+}    
+.in-animation7 {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.in-animation7.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.in-animation8 {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.in-animation8.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.star-rating {
+    font-size: 15px;
+    color: #ddd; /* Default color for empty stars */
+    display: inline-block;
+}
+
+.star {
+    color: none; /* Color for filled stars */
+}
+
+/* Filled stars */
+.star.filled {
+    color: #ffd700;
+}
+
+/* Half-filled star using a gradient */
+.star.half {
+    background: linear-gradient(90deg, #ffd700 50%, #ddd 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Modal overlay */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Modal content */
+.modal-content {
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Close button */
+.close {
+    margin-left: 1250px;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.log{
+        background-image: url("Hotel Project/images/182428240217.jpg");  
+        overflow: hidden;
+    }
+    .log1{
+        background-color: gray;
+        height: 503px;
+        width: 470px;
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-left: 400px;
+        opacity: 0.1;
+    }
+    .order1:hover{
+        background-color: azure;
+        text-decoration: underline;
+        transition-duration: 0.5s;
+    }
+    .order1{
+        background-color: chocolate;
+        color: black;
+        opacity: 1;
+        text-size-adjust: 50px; 
+         padding: 15px 180px;
+          font: bolder;
+    }
+    .social-icons a {
+    font-size: 20px; /* Icon size */
+    color: #ffffff; /* Icon color */
+    padding: 10px;
+    border-radius: 50%; /* Circle shape */
+    margin: 0 ;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.social-icons .fa-facebook {
+    background-color: #3b5998; /* Facebook blue */
+}
+.social-icons .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-icons .fa-twitter {
+    background-color: #1da1f2; /* Twitter blue */
+}
+
+.social-icons .fa-youtube {
+    background-color: #ff0000; /* YouTube red */
+}
+
+/* Hover effect */
+.social-icons a:hover {
+    color: #ffffff;
+    opacity: 0.8; /* Slight transparency */
+}
+
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Modal content */
+.modal-content1 {
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn1 0.5s ease;
+}
+
+/* Close button */
+.close1 {
+    margin-left: 1250px;
+    margin-top: 60px;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn1 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
